@@ -1,7 +1,7 @@
 {
-  "name": "react-ts-component-starter",
+  "name": "<Component name>",
   "version": "0.0.1",
-  "description": "What you need to create your own React component using typescript.",
+  "description": "<Component description>",
   "main": "build/index.js",
   "peerDependencies": {
     "react": "^16.2.0"

@@ -18,7 +18,7 @@ export default class MyComponent extends React.Component<IProps, IState> {
     render() {
         return(
             <div className="my-component">
-                <img src={logo} />
+                <img className="react-logo" src={logo} />
                 This is my awesome React component.
             </div>
         );

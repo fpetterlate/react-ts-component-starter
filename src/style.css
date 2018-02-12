@@ -7,6 +7,20 @@
     align-items: center;
 }
 
-img {
+.react-logo {
     width: 2em;
+    animation: logo-spin infinite 20s;
+    -webkit-animation: logo-spin infinite 20s linear;
+}
+
+@keyframes logo-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
 }

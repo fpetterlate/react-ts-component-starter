@@ -19,7 +19,7 @@ export default class MyComponent extends React.Component<IProps, IState> {
         return(
             <div className="my-component">
                 <img src={logo} />
-                This is my awesome React component. 123
+                This is my awesome React component.
             </div>
         );
     }

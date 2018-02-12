@@ -1,9 +1,9 @@
 React Typescript Component Starter
 =
 
-Starter project for creating your own React component with TypeScript.
+Starter project for creating your own React component with TypeScript. This component is just a demo of what you get when you publish it.
 
-##Edit
+## Edit
 * Edit `src/index.tsx` and `src/style.css`
 
 ## Build
@@ -19,13 +19,13 @@ Starter project for creating your own React component with TypeScript.
 * Run your application. If using `create-react-app`, run it with `npm start`.
 * Do some changes in the component and see that the application gets updated.
 
-##Publish
+## Publish
 * Edit `package.json` by adding the correct information like `name` and `author`.
 * Create a NPM account
 * `npm login` with your account information
 * `npm publish` to publish your component so other can enjoy its existence.
 
-##Links
+## Links
 
 [React](https://reactjs.org/)
 

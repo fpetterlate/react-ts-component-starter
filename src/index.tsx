@@ -1,21 +1,19 @@
 import * as React from "react";
 import "./style.css";
-const logo = require('./images/react-logo.svg');
+const logo = require("./images/react-logo.svg");
 
-interface IProps {
-    //Component props
-}
+// Component props
+interface IProps { }
 
-interface IState {
-    //Component state
-}
+// Component state
+interface IState { }
 
 export default class MyComponent extends React.Component<IProps, IState> {
     constructor(props: IProps) {
         super(props);
     }
 
-    render() {
+    public render() {
         return(
             <div className="my-component">
                 <img className="react-logo" src={logo} />

@@ -3,16 +3,18 @@ var path = require('path');
 module.exports = {
     entry: './src/index.tsx',
     output: {
-        path: path.resolve(__dirname, 'build'),
+        path: path.resolve(__dirname, 'dist'),
         filename: 'index.js',
         libraryTarget: 'commonjs2'
+    },
+    resolve: {
+        extensions: [".ts", ".tsx", ".js", ".css"]
     },
     module: {
         rules: [
             {
                 test: /\.ts(x?)$/,
-                include: path.resolve(__dirname, 'src'),
-                exclude: /(node_modules|bower_components|build)/,
+                exclude: /(node_modules|build)/,
                 use: [
                     'babel-loader',
                     'ts-loader'
@@ -21,8 +23,7 @@ module.exports = {
 
             {
                 test: /\.js$/,
-                include: path.resolve(__dirname, 'src'),
-                exclude: /(node_modules|bower_components|build)/,
+                exclude: /(node_modules|build)/,
                 use: {
                     loader: 'babel-loader',
                     options: {
@@ -33,8 +34,7 @@ module.exports = {
 
             {
                 test: /\.css$/,
-                include: path.resolve(__dirname, 'src'),
-                exclude: /(node_modules|bower_components|build)/,
+                exclude: /(node_modules|build)/,
                 use: [
                     "style-loader",
                     "css-loader"

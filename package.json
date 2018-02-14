@@ -1,8 +1,24 @@
 {
-  "name": "<Component name>",
+  "name": "<name>",
+  "description": "<description>",
   "version": "0.0.1",
-  "description": "<Component description>",
-  "main": "build/index.js",
+  "author": {
+    "name": "<name>",
+    "email": "<email>"
+  },
+  "homepage": "<url>",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "<type>",
+    "url": "<url>"
+  },
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack --watch",
+    "test": "mocha-webpack",
+    "test:watch": "npm run test -- --watch"
+  },
   "peerDependencies": {
     "react": "^16.2.0"
   },
@@ -10,16 +26,14 @@
     "react": "16.2.0",
     "webpack": "3.10.0"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack --watch",
-    "build": "webpack"
-  },
-  "author": {
-    "name": "<Your name>",
-    "email": "<Your email>"
-  },
   "devDependencies": {
+    "@types/enzyme": "3.1.9",
+    "@types/expect": "1.20.2",
+    "@types/jsdom": "11.0.4",
+    "@types/mocha": "2.2.48",
+    "@types/node": "9.4.5",
+    "@types/react": "16.0.36",
+    "@types/react-dom": "16.0.4",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.2",
@@ -27,12 +41,23 @@
     "babel-plugin-transform-react-jsx": "6.24.1",
     "babel-preset-env": "1.6.1",
     "css-loader": "0.28.9",
+    "enzyme": "3.3.0",
+    "enzyme-adapter-react-16": "1.1.1",
+    "expect": "22.3.0",
     "file-loader": "1.1.6",
+    "jest": "22.3.0",
+    "jest-css-modules": "1.1.0",
+    "jsdom": "11.6.2",
+    "mocha": "4.0.1",
+    "mocha-webpack": "1.0.1",
+    "react-dom": "16.2.0",
+    "react-test-renderer": "16.2.0",
     "style-loader": "0.20.1",
+    "ts-jest": "22.0.4",
     "ts-loader": "3.5.0",
+    "ts-node": "4.1.0",
     "typescript": "2.7.1",
     "url-loader": "0.6.2",
-    "@types/react": "16.0.36",
-    "@types/node": "9.4.5"
+    "webpack-node-externals": "1.6.0"
   }
 }

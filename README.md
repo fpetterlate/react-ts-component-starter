@@ -11,7 +11,11 @@ Starter project for creating your own React component with TypeScript. This comp
 * `npm run build` to build your component
 * `npm link` to create a symbolic link from the global folder to your component
 
-## Test
+## Run Tests
+* `npm run test` to run tests
+* `npm run test:watch` to see test status while your develop
+
+## Develop
 * Create a new React app using for example `create-react-app`. This app will be used for testing your component.
 * Import your react component
 * `npm link <your-component>` to link `node_modules/<your-component>` in your application to the global folder. So when importing your component it will call on the built version in the component project.
